@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+* {
+    font-family: 'Cookie', cursive;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    box-shadow: 0 2px 4px rgba(10, 119, 95, 0.9);
+    background-color: #81B29A;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    padding: 1px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 12px;
+    font-size: 1.2em;
+    word-spacing: 2px;
+    transition: transform 0.1s ease-in-out;
+    transform: scale(1.2);
+    transform-origin: 0 0;
+}
+
+nav a:hover {
+    transform: scale(1.25) translateY(-20%);
+}
+
+header {
+    background: url('SkyScraper.jpg');
+    background-size: cover;
+    background-position: center center;
+    color: #7B0828;
+    height: 100vh;
+    font-size: 40px ;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /*opacity: 0.9;*/
+}
+
+header::after {
+    content: '';
+    background-color: #000;
+    position: absolute;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+header * {
+    position: relative;
+    z-index: 1;
+}
+
+.developer {
+    background: linear-gradient(to right, #5d4157, #a8caba);
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	overflow:hidden;
+}
+
+.developer:hover {
+    transform: skew(-10deg);
+}
+
+header p {
+    text-decoration: underline;
+    padding: 5px;
+}
+
+header::after {
+    content: '';
+    background-color: #ffffff;
+    position: absolute;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+header * {
+    position: relative;
+    z-index: 1;
+  }
+
+section {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+section h2,
+section h3 {
+    font-size: 2.5em;
+    width: 100%;
+}
+
+section p {
+    font-size: 1.5em;
+}
+
+.project-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto 0;
+}
+
+.project a {
+    text-decoration: none;
+}
+
+.project img {
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project img:hover {
+    transform: scale(1) rotate(360deg);
+}
+
+.contact-links {
+    font-size: 30px;
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contact-links a {
+    margin: 0 15px;
+    color: #000;
+  }
+  
+  .contact-links a:hover {
+    opacity: 1;
+    color: #BB0A21;
+  }
+
+footer {
+    background-color: #81B29A;
+    box-shadow: 0 -2px 4px rgba(10, 119, 95, 0.9);
+    padding: 2px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .fa-heart {
+    color: #7B0828;
+  }
+  
+
+
+@media (max-width: 480px) {
+    header {
+        width: 100%;
+  }
+}
