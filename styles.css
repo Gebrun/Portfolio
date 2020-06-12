@@ -213,8 +213,52 @@ footer .fa-heart {
   
 
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     header {
         width: 100%;
+        display: flex;
+        justify-content: center;
   }
+
+    .developer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #about h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-container {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .about ul {
+        display: flex;
+        justify-content: center;
+        margin-right: 45px;
+    }
+
+    .about ol {
+        display: flex;
+        justify-content: center;
+        margin-left: 80px;
+        line-break: auto;
+    }
+
+    .profile {
+        margin-left: 50px;
+    }
+
+    .project {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
+
